@@ -1,4 +1,5 @@
 import React from "react";
+import { ProtectedRoute } from "components";
 import Singlementordetails from "pages/Singlementordetails";
 import Educatsymentors from "pages/Educatsymentors";
 import EducatsyJoinAsTeacher from "pages/EducatsyJoinAsTeacher";
@@ -32,7 +33,10 @@ const ProjectRoutes = () => {
           element={<EducatsyJoinAsTeacher />}
         />
         <Route path="/educatsymentors" element={<Educatsymentors />} />
-        <Route path="/singlementordetails" element={<Singlementordetails />} />
+        <Route
+          path="/singlementordetails"
+          element={<ProtectedRoute element={Singlementordetails} />}
+        />
       </Routes>
     </Router>
   );

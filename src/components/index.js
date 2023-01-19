@@ -12,6 +12,7 @@ import { Input } from "./Input";
 import { CheckBox } from "./CheckBox";
 import { PagerIndicator } from "./PagerIndicator";
 import { SelectBox } from "./SelectBox";
+import { ProtectedRoute } from "./ProtectedRoute";
 export {
   Datepicker,
   FloatingButton,
@@ -27,4 +28,5 @@ export {
   CheckBox,
   PagerIndicator,
   SelectBox,
+  ProtectedRoute,
 };

@@ -29,9 +29,10 @@ const Home1Page = () => {
                   alt="location"
                 />
                 <Text
-                  className="flex-grow font-semibold text-black_900 text-left"
+                  className="common-pointer flex-grow font-inter font-semibold text-colors text-left"
                   as="h4"
                   variant="h4"
+                  onClick={() => navigate("/home1")}
                 >
                   Educatsy
                 </Text>
@@ -42,12 +43,14 @@ const Home1Page = () => {
                 <div></div>
               </div>
             </div>
-            <ul className="flex md:flex-col sm:flex-col flex-row gap-[24px] md:hidden sm:hidden items-center justify-start ml-[54px] md:pl-[20px] md:pr-[20px] w-[auto] common-row-list">
+            <ul className="flex md:flex-col sm:flex-col flex-row gap-[24px] md:hidden sm:hidden items-center justify-start ml-[54px] md:pl-[20px] md:pr-[20px] w-[auto] common-row-list common-row-list">
               <li className="sm:w-[100%] sm:my-[10px] w-[auto] my-[2px]">
                 <a
                   href={"javascript:"}
                   className="common-pointer cursor-pointer font-medium text-[16px] text-gray_901 text-left"
-                  onClick={() => navigate("/educatsyshop")}
+                  onClick={() =>
+                    navigate("/educatsyshop", { state: { cat: "2" } })
+                  }
                   rel="noreferrer"
                 >
                   Shop
@@ -1435,7 +1438,7 @@ const Home1Page = () => {
           </div>
           <footer className="bg-gray_100 flex font-inter w-[100%]">
             <div className="flex md:flex-col sm:flex-col flex-row md:gap-[40px] sm:gap-[40px] items-start justify-between max-w-[1280px] mb-[80px] ml-[auto] mr-[auto] mt-[100px] mx-[auto] md:pl-[20px] sm:pl-[20px] md:pr-[20px] sm:pr-[20px] w-[100%]">
-              <ul className="flex flex-col items-start justify-start md:w-[100%] sm:w-[100%] w-[16%] common-column-list">
+              <ul className="flex flex-col items-start justify-start md:w-[100%] sm:w-[100%] w-[16%] common-column-list common-column-list">
                 <li className="w-[92%]">
                   <div className="cursor-pointer flex flex-row gap-[12px] items-center justify-start">
                     <Img
@@ -1485,7 +1488,7 @@ const Home1Page = () => {
                 >
                   Courses
                 </Text>
-                <ul className="flex flex-col gap-[17px] items-start justify-start w-[100%] common-column-list">
+                <ul className="flex flex-col gap-[17px] items-start justify-start w-[100%] common-column-list common-column-list">
                   <li className="w-[auto]">
                     <Text
                       className="cursor-pointer font-normal not-italic text-gray_700 text-left"
@@ -1539,7 +1542,7 @@ const Home1Page = () => {
                 >
                   Community
                 </Text>
-                <ul className="flex flex-col gap-[17px] items-start justify-start w-[100%] common-column-list">
+                <ul className="flex flex-col gap-[17px] items-start justify-start w-[100%] common-column-list common-column-list">
                   <li className="w-[auto]">
                     <Text
                       className="cursor-pointer font-normal not-italic text-gray_700 text-left"
@@ -1602,7 +1605,7 @@ const Home1Page = () => {
                 >
                   Quick links
                 </Text>
-                <ul className="flex flex-col gap-[17px] items-start justify-start md:w-[100%] sm:w-[100%] w-[99%] common-column-list">
+                <ul className="flex flex-col gap-[17px] items-start justify-start md:w-[100%] sm:w-[100%] w-[99%] common-column-list common-column-list">
                   <li className="w-[auto]">
                     <Text
                       className="cursor-pointer font-normal not-italic text-gray_700 text-left"
@@ -1665,7 +1668,7 @@ const Home1Page = () => {
                 >
                   More
                 </Text>
-                <ul className="flex flex-col gap-[17px] items-start justify-start w-[100%] common-column-list">
+                <ul className="flex flex-col gap-[17px] items-start justify-start w-[100%] common-column-list common-column-list">
                   <li className="w-[auto]">
                     <Text
                       className="cursor-pointer font-normal not-italic text-gray_700 text-left"
